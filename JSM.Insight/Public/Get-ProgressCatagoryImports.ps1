@@ -1,10 +1,9 @@
-# https://developer.atlassian.com/cloud/insight/rest/api-group-icon/#api-icon-id-get
-function Get-Icon {
+#https://developer.atlassian.com/cloud/insight/rest/api-group-progress/#api-progress-category-imports-id-get
+function Get-ProgressCatagoryImports {
     [CmdletBinding()]
     param (
+        [string]$ID,
         [String]$Version = "1",
-        [string]$IconID = "global",
-        [switch]$Full,
         [string]$InsightCreds = $InsightCreds,
         [string]$InsightWorkstationID = $InsightWorkstationID
     )
@@ -18,8 +17,7 @@ function Get-Icon {
     }
     
     process {
-        # Default is Global which will show all icons.
-        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkstationID/v$Version/icon/$IconID"
+        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkstationID/v$Version/progress/category/imports/$id"
     }
     
     end {
@@ -31,12 +29,7 @@ function Get-Icon {
             Write-Error -Message "$($_.Exception.Message)" -ErrorId $_.Exception.Code -Category InvalidOperation
         } 
 
-        if ($Full -eq $true) {
-            $response
-        }
-        else {
-            $response | Select id,name
-        }
+        $response
 
         Write-Verbose "[$($MyInvocation.MyCommand.Name)] Complete"
     }

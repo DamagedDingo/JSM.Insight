@@ -1,10 +1,9 @@
-# https://developer.atlassian.com/cloud/insight/rest/api-group-icon/#api-icon-id-get
-function Get-Icon {
+# https://developer.atlassian.com/cloud/insight/rest/api-group-config/#api-config-statustype-get
+function Remove-StatusTypeByID {
     [CmdletBinding()]
     param (
+        [String]$ID,
         [String]$Version = "1",
-        [string]$IconID = "global",
-        [switch]$Full,
         [string]$InsightCreds = $InsightCreds,
         [string]$InsightWorkstationID = $InsightWorkstationID
     )
@@ -18,25 +17,19 @@ function Get-Icon {
     }
     
     process {
-        # Default is Global which will show all icons.
-        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkstationID/v$Version/icon/$IconID"
+        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkstationID/v$Version/config/statustype/$ID"
     }
     
     end {
         try {
-            $response = Invoke-RestMethod -Uri $Request.Uri -Headers $headers -Method GET
+            $response = Invoke-RestMethod -Uri $Request.Uri -Headers $headers -Method DELETE
         }
         catch {
             Write-Verbose "[$($MyInvocation.MyCommand.Name)] Failed"
             Write-Error -Message "$($_.Exception.Message)" -ErrorId $_.Exception.Code -Category InvalidOperation
         } 
 
-        if ($Full -eq $true) {
-            $response
-        }
-        else {
-            $response | Select id,name
-        }
+        $response
 
         Write-Verbose "[$($MyInvocation.MyCommand.Name)] Complete"
     }
