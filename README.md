@@ -1,2 +1,4 @@
 # JSM.Insight
-Jira Insight (Intergrated, Cloud) Powershell Module
+Beta - Jira Insight (Intergrated, Cloud) Powershell Module
+
+https://developer.atlassian.com/cloud/insight/
