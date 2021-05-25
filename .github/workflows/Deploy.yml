@@ -3,7 +3,7 @@ name: "Workflow: Publish to GitHub and PowerShell Gallery"
 on: 
   push:
     branches:
-      - master
+      - main
 
 jobs:
   job-1:
