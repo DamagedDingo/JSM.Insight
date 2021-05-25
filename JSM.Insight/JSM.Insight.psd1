@@ -22,7 +22,7 @@ GUID = 'fbab056b-f110-4574-8ac7-28b5e72d394a'
 Author = 'Gary Smith'
 
 # Company or vendor of this module
-CompanyName = 'Unknown'
+CompanyName = 'DamagedDingo'
 
 # Copyright statement for this module
 Copyright = '(c) 2021 Gary Smith. All rights reserved.'
