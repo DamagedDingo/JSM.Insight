@@ -1,0 +1,4 @@
+.vscode
+!*.gitkeep
+build
+release
