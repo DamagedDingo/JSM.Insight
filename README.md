@@ -7,6 +7,6 @@ https://developer.atlassian.com/cloud/insight/
 # Getting Started #
 ## Using PowershellGallery ##
 ```
-Install-Module PSInsight
-Import-Module PSInsight
+Install-Module "JSM.Insight"
+Import-Module "JSM.Insight"
 ```
