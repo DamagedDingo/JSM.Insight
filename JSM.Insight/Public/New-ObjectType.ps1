@@ -18,6 +18,8 @@ function New-ObjectType {
     begin {
         Write-Verbose "[$($MyInvocation.MyCommand.Name)] Function started"
 
+        $Headers = New-Headers
+
         $RequestBody = @{
             'name' = $Name
             'iconID'   = $iconID
@@ -38,9 +40,6 @@ function New-ObjectType {
 
         $RequestBody = ConvertTo-Json $RequestBody -Depth 1
 
-        $Headers = New-Object 'System.Collections.Generic.Dictionary[[String],[String]]'
-        $Headers.Add('content-type' , 'application/json')
-        $Headers.Add('Authorization', 'Basic ' + $InsightCreds)
     }
     
     process {

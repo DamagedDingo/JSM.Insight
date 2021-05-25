@@ -30,6 +30,7 @@ function New-ObjectTypeAttribute {
     
     begin {
         Write-Verbose "[$($MyInvocation.MyCommand.Name)] Function started"
+        $Headers = New-Headers
 
         $ConvertedType = switch ($Type) {
             "Default" { 0 }
@@ -110,10 +111,6 @@ function New-ObjectTypeAttribute {
             }
 
         $RequestBody = ConvertTo-Json $RequestBody -Depth 1
-
-        $Headers = New-Object 'System.Collections.Generic.Dictionary[[String],[String]]'
-        $Headers.Add('content-type' , 'application/json')
-        $Headers.Add('Authorization', 'Basic ' + $InsightCreds)
     }
     
     process {

@@ -14,6 +14,7 @@ function New-StatusType {
     
     begin {
         Write-Verbose "[$($MyInvocation.MyCommand.Name)] Function started"
+        $Headers = New-Headers
 
         switch ($Category) {
             "InActive\Red" { 0 }
@@ -32,10 +33,6 @@ function New-StatusType {
                 $RequestBody.Add('objectSchemaId', $objectSchemaId)
             }
         $RequestBody = ConvertTo-Json $RequestBody -Depth 1
-
-        $Headers = New-Object 'System.Collections.Generic.Dictionary[[String],[String]]'
-        $Headers.Add('content-type' , 'application/json')
-        $Headers.Add('Authorization', 'Basic ' + $InsightCreds)
     }
     
     process {

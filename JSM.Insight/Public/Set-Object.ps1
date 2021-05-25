@@ -1,7 +1,12 @@
 
-function Get-ObjectSchemaList {
+function Set-Object {
     [CmdletBinding()]
     param (
+        [string]$ID,
+        [string]$objectTypeId,
+        [array]$attributesArray,
+        [Bool]$hasAvatar,
+        [string]$avatarUUID,
         [String]$Version = "1",
         [string]$InsightCreds = $InsightCreds,
         [string]$InsightWorkstationID = $InsightWorkstationID
@@ -13,12 +18,18 @@ function Get-ObjectSchemaList {
     }
     
     process {
-        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkstationID/v$Version/objectschema/list"
+
+        $RequestBody = @{
+            'objectTypeId' = $objectTypeId
+            'attributes'   = @($attributes)
+            }
+
+        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkstationID/v$Version/object/$id"
     }
     
     end {
         try {
-            $response = Invoke-RestMethod -Uri $Request.Uri -Headers $headers -Method GET
+            $response = Invoke-RestMethod -Uri $Request.Uri -Body $RequestBody -Headers $headers -Method PUT
         }
         catch {
             Write-Verbose "[$($MyInvocation.MyCommand.Name)] Failed"
@@ -26,7 +37,7 @@ function Get-ObjectSchemaList {
         } 
 
         $response
-        
+
         Write-Verbose "[$($MyInvocation.MyCommand.Name)] Complete"
     }
 }
