@@ -12,3 +12,4 @@ Format as below (Requires the '### Added' as a header or task fails)
 ## [Unreleased]
 ### Added
 - Publish Beta to PowerShell Gallary
+- Added PS Gallery API Key 
