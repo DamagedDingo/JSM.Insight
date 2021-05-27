@@ -12,7 +12,7 @@
 RootModule = 'JSM.Insight.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.3'
+ModuleVersion = '1.4'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -120,7 +120,7 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = 'Added
-- Typo fix'
+- Fix CmdletBinding in Get-InsightWorkspaceID'
 
         # Prerelease string of this module
         # Prerelease = ''
