@@ -1,5 +1,5 @@
 
-function New-Object {
+function New-ObjectByID {
     [CmdletBinding()]
     param (
         [string]$ID,

@@ -1,5 +1,5 @@
 
-function Set-Object {
+function Set-ObjectByID {
     [CmdletBinding()]
     param (
         [string]$ID,

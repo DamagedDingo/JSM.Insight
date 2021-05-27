@@ -1,5 +1,5 @@
 # https://developer.atlassian.com/cloud/insight/rest/api-group-object/#api-object-id-get
-function Get-Object {
+function Get-ObjectByID {
     [CmdletBinding()]
     param (
         [string]$ID,
