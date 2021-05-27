@@ -12,7 +12,7 @@
 RootModule = 'JSM.Insight.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.6'
+ModuleVersion = '1.7'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -70,17 +70,18 @@ Description = 'A collection of Powershell tools to interface with the API for th
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
 FunctionsToExport = 'Get-Icon', 'Get-InsightCreds', 'Get-InsightWorkspaceID', 
-               'Get-ObjectAttributes', 'Get-Object', 'Get-ObjectConnectedTickets', 
-               'Get-ObjectHistory', 'Get-ObjectReferenceInfo', 'Get-ObjectSchema', 
+               'Get-ObjectAttributes', 'Get-ObjectByID', 
+               'Get-ObjectConnectedTickets', 'Get-ObjectHistory', 
+               'Get-ObjectReferenceInfo', 'Get-ObjectSchema', 
                'Get-ObjectSchemaAttributes', 'Get-ObjectSchemaList', 
                'Get-ObjectSchemaObjectTypes', 'Get-ObjectType', 
                'Get-ObjectTypeAttributes', 'Get-ProgressCatagoryImports', 
                'Get-StatusTypeByID', 'Get-StatusTypes', 'New-AttributeArray', 
-               'New-Object', 'New-ObjectSchema', 'New-ObjectType', 
+               'New-ObjectByID', 'New-ObjectSchema', 'New-ObjectType', 
                'New-ObjectTypeAttribute', 'New-StatusType', 'Remove-Object', 
                'Remove-ObjectSchema', 'Remove-ObjectType', 
-               'Remove-ObjectTypeAttribute', 'Remove-StatusTypeByID', 'Set-Object', 
-               'New-Object', 'Set-ObjectSchema', 'Set-ObjectType', 
+               'Remove-ObjectTypeAttribute', 'Remove-StatusTypeByID', 
+               'Set-ObjectByID', 'New-Object', 'Set-ObjectSchema', 'Set-ObjectType', 
                'Set-ObjectTypeAttribute', 'Set-StatusType', 'Update-Object'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
@@ -120,7 +121,6 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = 'Added
-- Removed URI from get-headers
 - Renamed Get-Object, Set-Object, New-Object, Remove-Object to Get-ObjectByID, Set-ObjectByID, New-ObjectByID, Remove-ObjectByID because these are system names.'
 
         # Prerelease string of this module
