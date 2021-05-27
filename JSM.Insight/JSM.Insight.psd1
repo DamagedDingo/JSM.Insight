@@ -12,7 +12,7 @@
 RootModule = 'JSM.Insight.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.1'
+ModuleVersion = '1.2'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -79,10 +79,9 @@ FunctionsToExport = 'Get-Icon', 'Get-InsightCreds', 'Get-Object', 'Get-ObjectAtt
                'New-AttributeArray', 'New-Object', 'New-ObjectSchema', 
                'New-ObjectType', 'New-ObjectTypeAttribute', 'New-StatusType', 
                'Remove-Object', 'Remove-ObjectSchema', 'Remove-ObjectType', 
-               'Remove-ObjectTypeAttribute', 'Remove-StatusTypeByID', 
-               'Set-InsightCreds', 'Set-Object', 'New-Object', 'Set-ObjectSchema', 
-               'Set-ObjectType', 'Set-ObjectTypeAttribute', 'Set-StatusType', 
-               'Set-WorkspaceID', 'Update-Object'
+               'Remove-ObjectTypeAttribute', 'Remove-StatusTypeByID', 'Set-Object', 
+               'New-Object', 'Set-ObjectSchema', 'Set-ObjectType', 
+               'Set-ObjectTypeAttribute', 'Set-StatusType', 'Update-Object'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = '*'
@@ -121,9 +120,7 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = 'Added
-- Added Get-InsightCreds
-- Added Get-InsightWorkspaceID
-- Delete Set-InsightServer (Only used once, no need for function)'
+- Bug fix'
 
         # Prerelease string of this module
         # Prerelease = ''
