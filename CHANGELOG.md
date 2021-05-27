@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+
+## [1.6] - 2021-05-27
 ### Added
 - Removed URI from get-headers
 - Renamed Get-Object, Set-Object, New-Object, Remove-Object to Get-ObjectByID, Set-ObjectByID, New-ObjectByID, Remove-ObjectByID because these are system names.
@@ -42,7 +44,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 - Publish Beta to PowerShell Gallary
 - Added PS Gallery API Key 
 
-[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.5..HEAD
+[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.6..HEAD
+[1.6]: https://github.com/DamagedDingo/JSM.Insight/compare/1.5..1.6
 [1.5]: https://github.com/DamagedDingo/JSM.Insight/compare/1.4..1.5
 [1.4]: https://github.com/DamagedDingo/JSM.Insight/compare/1.3..1.4
 [1.3]: https://github.com/DamagedDingo/JSM.Insight/compare/1.2..1.3

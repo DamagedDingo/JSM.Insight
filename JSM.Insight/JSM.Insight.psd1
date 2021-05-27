@@ -12,7 +12,7 @@
 RootModule = 'JSM.Insight.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.5'
+ModuleVersion = '1.6'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -69,8 +69,8 @@ Description = 'A collection of Powershell tools to interface with the API for th
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = 'Get-Icon', 'Get-InsightCreds', 'Get-InsightWorkspaceID', 'Get-Object', 
-               'Get-ObjectAttributes', 'Get-ObjectConnectedTickets', 
+FunctionsToExport = 'Get-Icon', 'Get-InsightCreds', 'Get-InsightWorkspaceID', 
+               'Get-ObjectAttributes', 'Get-Object', 'Get-ObjectConnectedTickets', 
                'Get-ObjectHistory', 'Get-ObjectReferenceInfo', 'Get-ObjectSchema', 
                'Get-ObjectSchemaAttributes', 'Get-ObjectSchemaList', 
                'Get-ObjectSchemaObjectTypes', 'Get-ObjectType', 
@@ -120,7 +120,8 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = 'Added
-- Corrupt package. CallDepthOverflow'
+- Removed URI from get-headers
+- Renamed Get-Object, Set-Object, New-Object, Remove-Object to Get-ObjectByID, Set-ObjectByID, New-ObjectByID, Remove-ObjectByID because these are system names.'
 
         # Prerelease string of this module
         # Prerelease = ''
