@@ -10,6 +10,7 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+### Added
 - Fix CmdletBinding in Get-InsightWorkspaceID
 
 ## [1.3] - 2021-05-27
