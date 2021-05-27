@@ -22,7 +22,7 @@ function Get-WorkspaceID {
         catch {
             Write-Error -Message "$($_.Exception.Message)" -ErrorId $_.Exception.Code -Category InvalidOperation
         } 
-        $script:InsightWorkstationID = $response.values.workspaceId
+        $script:InsightWorkspaceID = $response.values.workspaceId
         $response.values.workspaceId
 
         Write-Verbose "[$($MyInvocation.MyCommand.Name)] Complete"
