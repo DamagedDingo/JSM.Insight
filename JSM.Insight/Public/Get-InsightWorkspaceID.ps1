@@ -1,5 +1,5 @@
 
-function Get-WorkspaceID {
+function Get-InsightWorkspaceID {
     [CmdletBinding()]
     param (
         [uri]$InsightServerUrl,
@@ -20,7 +20,7 @@ function Get-WorkspaceID {
             $response = Invoke-RestMethod -Uri $Request.Uri -Headers $headers -Method GET
         }
         catch {
-            Write-Error -Message "$($_.Exception.Message)" -ErrorId $_.Exception.Code -Category InvalidOperation
+            Write-Verbose "[$($MyInvocation.MyCommand.Name)] Failed"
         } 
         $script:InsightWorkspaceID = $response.values.workspaceId
         $response.values.workspaceId
