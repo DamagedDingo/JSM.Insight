@@ -12,7 +12,7 @@
 RootModule = 'JSM.Insight.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.4'
+ModuleVersion = '1.5'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -69,16 +69,16 @@ Description = 'A collection of Powershell tools to interface with the API for th
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = 'Get-Icon', 'Get-InsightCreds', 'Get-Object', 'Get-ObjectAttributes', 
-               'Get-ObjectConnectedTickets', 'Get-ObjectHistory', 
-               'Get-ObjectReferenceInfo', 'Get-ObjectSchema', 
+FunctionsToExport = 'Get-Icon', 'Get-InsightCreds', 'Get-InsightWorkspaceID', 'Get-Object', 
+               'Get-ObjectAttributes', 'Get-ObjectConnectedTickets', 
+               'Get-ObjectHistory', 'Get-ObjectReferenceInfo', 'Get-ObjectSchema', 
                'Get-ObjectSchemaAttributes', 'Get-ObjectSchemaList', 
                'Get-ObjectSchemaObjectTypes', 'Get-ObjectType', 
                'Get-ObjectTypeAttributes', 'Get-ProgressCatagoryImports', 
-               'Get-StatusTypeByID', 'Get-StatusTypes', 'Get-WorkspaceID', 
-               'New-AttributeArray', 'New-Object', 'New-ObjectSchema', 
-               'New-ObjectType', 'New-ObjectTypeAttribute', 'New-StatusType', 
-               'Remove-Object', 'Remove-ObjectSchema', 'Remove-ObjectType', 
+               'Get-StatusTypeByID', 'Get-StatusTypes', 'New-AttributeArray', 
+               'New-Object', 'New-ObjectSchema', 'New-ObjectType', 
+               'New-ObjectTypeAttribute', 'New-StatusType', 'Remove-Object', 
+               'Remove-ObjectSchema', 'Remove-ObjectType', 
                'Remove-ObjectTypeAttribute', 'Remove-StatusTypeByID', 'Set-Object', 
                'New-Object', 'Set-ObjectSchema', 'Set-ObjectType', 
                'Set-ObjectTypeAttribute', 'Set-StatusType', 'Update-Object'
@@ -120,7 +120,7 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = 'Added
-- Fix CmdletBinding in Get-InsightWorkspaceID'
+- Corrupt package. CallDepthOverflow'
 
         # Prerelease string of this module
         # Prerelease = ''

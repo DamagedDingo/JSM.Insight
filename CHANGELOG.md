@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+
+## [1.5] - 2021-05-27
 ### Added
 - Corrupt package. CallDepthOverflow
 
@@ -36,7 +38,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 - Publish Beta to PowerShell Gallary
 - Added PS Gallery API Key 
 
-[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.4..HEAD
+[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.5..HEAD
+[1.5]: https://github.com/DamagedDingo/JSM.Insight/compare/1.4..1.5
 [1.4]: https://github.com/DamagedDingo/JSM.Insight/compare/1.3..1.4
 [1.3]: https://github.com/DamagedDingo/JSM.Insight/compare/1.2..1.3
 [1.2]: https://github.com/DamagedDingo/JSM.Insight/compare/1.1..1.2
