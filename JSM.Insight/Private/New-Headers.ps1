@@ -1,6 +1,5 @@
 function New-Headers {
     param (
-        [uri]$InsightServerUrl = $InsightServerUrl,
         [string]$InsightCreds = $InsightCreds,
         [switch]$ExperimentalApi
     )

@@ -10,6 +10,10 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+### Added
+- Removed URI from get-headers
+- Renamed Get-Object, Set-Object, New-Object, Remove-Object to Get-ObjectByID, Set-ObjectByID, New-ObjectByID, Remove-ObjectByID because these are system names.
+
 
 ## [1.5] - 2021-05-27
 ### Added
