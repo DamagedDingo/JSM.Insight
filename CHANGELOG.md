@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+
+## [1.3] - 2021-05-27
 ### Added
 - Typo fix
 
@@ -28,7 +30,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 - Publish Beta to PowerShell Gallary
 - Added PS Gallery API Key 
 
-[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.2..HEAD
+[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.3..HEAD
+[1.3]: https://github.com/DamagedDingo/JSM.Insight/compare/1.2..1.3
 [1.2]: https://github.com/DamagedDingo/JSM.Insight/compare/1.1..1.2
 [1.1]: https://github.com/DamagedDingo/JSM.Insight/compare/1.0..1.1
 [1.0]: https://github.com/DamagedDingo/JSM.Insight/tree/1.0
