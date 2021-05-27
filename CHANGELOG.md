@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+
+## [1.1] - 2021-05-27
 ### Added
 - Added Get-InsightCreds
 - Added Get-InsightWorkspaceID
@@ -20,5 +22,6 @@ Format as below (Requires the '### Added' as a header or task fails)
 - Publish Beta to PowerShell Gallary
 - Added PS Gallery API Key 
 
-[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.0..HEAD
+[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.1..HEAD
+[1.1]: https://github.com/DamagedDingo/JSM.Insight/compare/1.0..1.1
 [1.0]: https://github.com/DamagedDingo/JSM.Insight/tree/1.0
