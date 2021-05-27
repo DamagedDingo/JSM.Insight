@@ -1,7 +1,7 @@
 
 function Get-WorkspaceID {
+    [CmdletBinding()]
     param (
-        [cmdletbinding()]
         [uri]$InsightServerUrl,
         [string]$InsightCreds = $InsightCreds
     )
