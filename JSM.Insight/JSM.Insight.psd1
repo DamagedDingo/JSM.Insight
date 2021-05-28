@@ -12,7 +12,7 @@
 RootModule = 'JSM.Insight.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.12'
+ModuleVersion = '1.13'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -122,7 +122,7 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = 'Added
-- Updated from switch to Bool to allow for easier scripting. '
+- Fix copy\past issues in some functions (-Body $RequestBody)'
 
         # Prerelease string of this module
         # Prerelease = ''
