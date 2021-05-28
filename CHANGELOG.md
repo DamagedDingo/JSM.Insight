@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+### Added
+- Forced whole module overwrite stop corrupt build
 
 ## [1.8] - 2021-05-28
 ### Added
