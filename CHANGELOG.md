@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+
+## [1.10] - 2021-05-28
 ### Added
 - Set-ObjectPosition (Function name was incorrect)
 
@@ -58,7 +60,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 - Publish Beta to PowerShell Gallary
 - Added PS Gallery API Key 
 
-[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.9..HEAD
+[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.10..HEAD
+[1.10]: https://github.com/DamagedDingo/JSM.Insight/compare/1.9..1.10
 [1.9]: https://github.com/DamagedDingo/JSM.Insight/compare/1.8..1.9
 [1.8]: https://github.com/DamagedDingo/JSM.Insight/compare/1.7..1.8
 [1.7]: https://github.com/DamagedDingo/JSM.Insight/compare/1.6..1.7

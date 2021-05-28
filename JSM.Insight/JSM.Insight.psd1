@@ -12,7 +12,7 @@
 RootModule = 'JSM.Insight.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.9'
+ModuleVersion = '1.10'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -78,11 +78,12 @@ FunctionsToExport = 'Get-Icon', 'Get-InsightCreds', 'Get-InsightWorkspaceID',
                'Get-ObjectTypeAttributes', 'Get-ProgressCatagoryImports', 
                'Get-StatusTypeByID', 'Get-StatusTypes', 'New-AttributeArray', 
                'New-ObjectByID', 'New-ObjectSchema', 'New-ObjectType', 
-               'New-ObjectTypeAttribute', 'New-StatusType', 'Remove-Object', 
+               'New-ObjectTypeAttribute', 'New-StatusType', 'Remove-ObjectByID', 
                'Remove-ObjectSchema', 'Remove-ObjectType', 
                'Remove-ObjectTypeAttribute', 'Remove-StatusTypeByID', 
-               'Set-ObjectByID', 'New-Object', 'Set-ObjectSchema', 'Set-ObjectType', 
-               'Set-ObjectTypeAttribute', 'Set-StatusType', 'Update-Object'
+               'Set-ObjectByID', 'Set-ObjectPosition', 'Set-ObjectSchema', 
+               'Set-ObjectType', 'Set-ObjectTypeAttribute', 'Set-StatusType', 
+               'Update-ObjectByID'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = '*'
@@ -121,7 +122,7 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = 'Added
-- Forced whole module overwrite stop corrupt build'
+- Set-ObjectPosition (Function name was incorrect)'
 
         # Prerelease string of this module
         # Prerelease = ''
