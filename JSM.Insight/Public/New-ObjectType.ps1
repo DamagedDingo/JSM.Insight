@@ -2,14 +2,13 @@
 function New-ObjectType {
     [CmdletBinding()]
     param (
-        [string]$ID,
         [string]$name,
         [string]$description,
         [string]$iconID,
         [string]$ObjectSchemaID,
         [string]$ParentObjectTypeID,
-        [switch]$Inherited,
-        [switch]$AbstractObjectType,
+        [bool]$Inherited,
+        [bool]$AbstractObjectType,
         [String]$Version = "1",
         [string]$InsightCreds = $InsightCreds,
         [string]$InsightWorkspaceID = $InsightWorkspaceID

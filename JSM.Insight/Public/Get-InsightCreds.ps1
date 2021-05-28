@@ -6,6 +6,7 @@ Function Get-InsightCreds {
         [ValidateNotNullOrEmpty()]
         [Alias('user')]
         [string]$Username,
+        
         [Parameter( Mandatory )]
         [ValidateNotNullOrEmpty()]
         [Alias('pass')]
