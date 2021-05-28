@@ -12,7 +12,7 @@
 RootModule = 'JSM.Insight.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.11'
+ModuleVersion = '1.12'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -122,7 +122,7 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = 'Added
-- Update all fuctions to use $InsightWorkspaceID instead of $InsightWorkstationID.'
+- Updated from switch to Bool to allow for easier scripting. '
 
         # Prerelease string of this module
         # Prerelease = ''

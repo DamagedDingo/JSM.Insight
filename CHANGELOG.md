@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+
+## [1.12] - 2021-05-28
 ### Added
 - Updated from switch to Bool to allow for easier scripting. 
 
@@ -66,7 +68,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 - Publish Beta to PowerShell Gallary
 - Added PS Gallery API Key 
 
-[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.11..HEAD
+[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.12..HEAD
+[1.12]: https://github.com/DamagedDingo/JSM.Insight/compare/1.11..1.12
 [1.11]: https://github.com/DamagedDingo/JSM.Insight/compare/1.10..1.11
 [1.10]: https://github.com/DamagedDingo/JSM.Insight/compare/1.9..1.10
 [1.9]: https://github.com/DamagedDingo/JSM.Insight/compare/1.8..1.9
