@@ -9,7 +9,7 @@ function New-StatusType {
         [String]$objectSchemaId,
         [String]$Version = "1",
         [string]$InsightCreds = $InsightCreds,
-        [string]$InsightWorkstationID = $InsightWorkstationID
+        [string]$InsightWorkspaceID = $InsightWorkspaceID
     )
     
     begin {
@@ -36,7 +36,7 @@ function New-StatusType {
     }
     
     process {
-        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkstationID/v$Version/config/statustype"
+        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkspaceID/v$Version/config/statustype"
     }
     
     end {

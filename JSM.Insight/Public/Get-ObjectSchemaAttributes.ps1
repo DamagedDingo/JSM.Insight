@@ -8,7 +8,7 @@ function Get-ObjectSchemaAttributes {
         [string]$Query,
         [String]$Version = '1',
         [string]$InsightCreds = $InsightCreds,
-        [string]$InsightWorkstationID = $InsightWorkstationID
+        [string]$InsightWorkspaceID = $InsightWorkspaceID
     )
     
     begin {
@@ -30,7 +30,7 @@ function Get-ObjectSchemaAttributes {
             }
         $RequestBody = ConvertTo-Json $RequestBody -Depth 1
 
-        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkstationID/v$Version/objectschema/$id/attributes"
+        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkspaceID/v$Version/objectschema/$id/attributes"
     }
     
     end {

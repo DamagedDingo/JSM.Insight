@@ -12,7 +12,7 @@ function New-ObjectType {
         [switch]$AbstractObjectType,
         [String]$Version = "1",
         [string]$InsightCreds = $InsightCreds,
-        [string]$InsightWorkstationID = $InsightWorkstationID
+        [string]$InsightWorkspaceID = $InsightWorkspaceID
     )
     
     begin {
@@ -43,7 +43,7 @@ function New-ObjectType {
     }
     
     process {
-        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkstationID/v$Version/objecttype/create"
+        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkspaceID/v$Version/objecttype/create"
     }
     
     end {

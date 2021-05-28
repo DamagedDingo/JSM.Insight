@@ -5,7 +5,7 @@ function Get-StatusTypeByID {
         [String]$ID,
         [String]$Version = "1",
         [string]$InsightCreds = $InsightCreds,
-        [string]$InsightWorkstationID = $InsightWorkstationID
+        [string]$InsightWorkspaceID = $InsightWorkspaceID
     )
     
     begin {
@@ -14,7 +14,7 @@ function Get-StatusTypeByID {
     }
     
     process {
-        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkstationID/v$Version/config/statustype/$ID"
+        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkspaceID/v$Version/config/statustype/$ID"
     }
     
     end {

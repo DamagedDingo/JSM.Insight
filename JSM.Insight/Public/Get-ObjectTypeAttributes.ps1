@@ -16,7 +16,7 @@ function Get-ObjectTypeAttributes {
         [switch]$orderByRequired,
         [String]$Version = "1",
         [string]$InsightCreds = $InsightCreds,
-        [string]$InsightWorkstationID = $InsightWorkstationID
+        [string]$InsightWorkspaceID = $InsightWorkspaceID
     )
 
     begin {
@@ -25,7 +25,7 @@ function Get-ObjectTypeAttributes {
     }
     
     process {
-        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkstationID/v$Version/objecttype/$id/attributes"
+        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkspaceID/v$Version/objecttype/$id/attributes"
     }
     
     end {

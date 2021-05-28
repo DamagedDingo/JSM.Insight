@@ -6,7 +6,7 @@ function Get-Icon {
         [string]$IconID = "global",
         [switch]$Full,
         [string]$InsightCreds = $InsightCreds,
-        [string]$InsightWorkstationID = $InsightWorkstationID
+        [string]$InsightWorkspaceID = $InsightWorkspaceID
     )
     
     begin {
@@ -16,7 +16,7 @@ function Get-Icon {
     
     process {
         # Default is Global which will show all icons.
-        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkstationID/v$Version/icon/$IconID"
+        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkspaceID/v$Version/icon/$IconID"
     }
     
     end {

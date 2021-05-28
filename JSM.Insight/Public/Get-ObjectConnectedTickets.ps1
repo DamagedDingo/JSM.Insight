@@ -5,7 +5,7 @@ function Get-ObjectConnectedTickets {
         [string]$ID,
         [String]$Version = "1",
         [string]$InsightCreds = $InsightCreds,
-        [string]$InsightWorkstationID = $InsightWorkstationID
+        [string]$InsightWorkspaceID = $InsightWorkspaceID
     )
     
     begin {
@@ -14,7 +14,7 @@ function Get-ObjectConnectedTickets {
     }
     
     process {
-        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkstationID/v$Version/objectconnectedtickets/$id/tickets"
+        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkspaceID/v$Version/objectconnectedtickets/$id/tickets"
     }
     
     end {

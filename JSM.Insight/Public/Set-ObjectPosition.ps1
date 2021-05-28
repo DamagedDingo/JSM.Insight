@@ -7,7 +7,7 @@ function Set-ObjectPosition {
         [int]$position,
         [String]$Version = "1",
         [string]$InsightCreds = $InsightCreds,
-        [string]$InsightWorkstationID = $InsightWorkstationID
+        [string]$InsightWorkspaceID = $InsightWorkspaceID
     )
     
     begin {
@@ -26,7 +26,7 @@ function Set-ObjectPosition {
 
         $RequestBody = ConvertTo-Json $RequestBody -Depth 1
 
-        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkstationID/v$Version/objecttype/$id/position"
+        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkspaceID/v$Version/objecttype/$id/position"
     }
     
     end {

@@ -8,7 +8,7 @@ function Set-ObjectSchema {
         [string]$Description,
         [String]$Version = "1",
         [string]$InsightCreds = $InsightCreds,
-        [string]$InsightWorkstationID = $InsightWorkstationID
+        [string]$InsightWorkspaceID = $InsightWorkspaceID
     )
     
     begin {
@@ -26,7 +26,7 @@ function Set-ObjectSchema {
             }
         $RequestBody = ConvertTo-Json $RequestBody -Depth 1
 
-        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkstationID/v$Version/objectschema/$id"
+        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkspaceID/v$Version/objectschema/$id"
     }
     
     end {

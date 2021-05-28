@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+### Added
+- Update all fuctions to use $InsightWorkspaceID instead of $InsightWorkstationID.
 
 ## [1.10] - 2021-05-28
 ### Added

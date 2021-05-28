@@ -26,7 +26,7 @@ function Set-ObjectTypeAttribute {
         [string]$options,
         [String]$Version = "1",
         [string]$InsightCreds = $InsightCreds,
-        [string]$InsightWorkstationID = $InsightWorkstationID
+        [string]$InsightWorkspaceID = $InsightWorkspaceID
     )
     
     begin {
@@ -115,7 +115,7 @@ function Set-ObjectTypeAttribute {
     }
     
     process {
-        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkstationID/v$Version/objecttypeattribute/$ObjectTypeId/$ID"
+        $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkspaceID/v$Version/objecttypeattribute/$ObjectTypeId/$ID"
     }
     
     end {
