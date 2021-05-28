@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+
+## [1.9] - 2021-05-28
 ### Added
 - Forced whole module overwrite stop corrupt build
 
@@ -54,7 +56,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 - Publish Beta to PowerShell Gallary
 - Added PS Gallery API Key 
 
-[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.8..HEAD
+[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.9..HEAD
+[1.9]: https://github.com/DamagedDingo/JSM.Insight/compare/1.8..1.9
 [1.8]: https://github.com/DamagedDingo/JSM.Insight/compare/1.7..1.8
 [1.7]: https://github.com/DamagedDingo/JSM.Insight/compare/1.6..1.7
 [1.6]: https://github.com/DamagedDingo/JSM.Insight/compare/1.5..1.6
