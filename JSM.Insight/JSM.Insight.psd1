@@ -81,7 +81,7 @@ FunctionsToExport = 'Get-Icon', 'Get-InsightCreds', 'Get-InsightWorkspaceID',
                'New-ObjectTypeAttribute', 'New-StatusType', 'Remove-Object', 
                'Remove-ObjectSchema', 'Remove-ObjectType', 
                'Remove-ObjectTypeAttribute', 'Remove-StatusTypeByID', 
-               'Set-ObjectByID', 'New-Object', 'Set-ObjectSchema', 'Set-ObjectType', 
+               'Set-ObjectByID', 'Set-ObjectSchema', 'Set-ObjectType', 
                'Set-ObjectTypeAttribute', 'Set-StatusType', 'Update-Object'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
