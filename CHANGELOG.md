@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+### Added
+- Updated from switch to Bool to allow for easier scripting. 
 
 ## [1.11] - 2021-05-28
 ### Added
