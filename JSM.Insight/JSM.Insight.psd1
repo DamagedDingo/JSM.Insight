@@ -12,7 +12,7 @@
 RootModule = 'JSM.Insight.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.10'
+ModuleVersion = '1.11'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -122,7 +122,7 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = 'Added
-- Set-ObjectPosition (Function name was incorrect)'
+- Update all fuctions to use $InsightWorkspaceID instead of $InsightWorkstationID.'
 
         # Prerelease string of this module
         # Prerelease = ''
