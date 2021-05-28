@@ -1,5 +1,5 @@
 
-function Update-Object {
+function Update-ObjectByID {
     [CmdletBinding()]
     param (
         [string]$ID,

@@ -1,5 +1,5 @@
 
-function New-Object {
+function Set-ObjectPosition {
     [CmdletBinding()]
     param (
         [string]$ID,

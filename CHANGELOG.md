@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+### Added
+- Set-ObjectPosition (Function name was incorrect)
 
 ## [1.9] - 2021-05-28
 ### Added

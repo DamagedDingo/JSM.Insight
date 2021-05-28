@@ -1,5 +1,5 @@
 
-function Remove-Object {
+function Remove-ObjectByID {
     [CmdletBinding()]
     param (
         [string]$ID,
