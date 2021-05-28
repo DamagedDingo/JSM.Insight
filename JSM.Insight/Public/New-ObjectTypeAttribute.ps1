@@ -119,7 +119,7 @@ function New-ObjectTypeAttribute {
     
     end {
         try {
-            $response = Invoke-RestMethod -Uri $Request.Uri -Headers $headers -Method POST
+            $response = Invoke-RestMethod -Uri $Request.Uri -Body $RequestBody -Headers $headers -Method POST
         }
         catch {
             Write-Verbose "[$($MyInvocation.MyCommand.Name)] Failed"

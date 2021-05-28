@@ -19,7 +19,7 @@ function Get-ObjectSchemaObjectTypes {
     
     end {
         try {
-            $response = Invoke-RestMethod -Uri $Request.Uri -Body $RequestBody -Headers $headers -Method GET
+            $response = Invoke-RestMethod -Uri $Request.Uri -Headers $headers -Method GET
         }
         catch {
             Write-Verbose "[$($MyInvocation.MyCommand.Name)] Failed"

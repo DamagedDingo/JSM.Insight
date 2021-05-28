@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+### Added
+- Fix copy\past issues in some functions (-Body $RequestBody)
 
 ## [1.12] - 2021-05-28
 ### Added

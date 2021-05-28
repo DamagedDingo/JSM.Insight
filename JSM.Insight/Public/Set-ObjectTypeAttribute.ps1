@@ -120,7 +120,7 @@ function Set-ObjectTypeAttribute {
     
     end {
         try {
-            $response = Invoke-RestMethod -Uri $Request.Uri -Headers $headers -Method PUT
+            $response = Invoke-RestMethod -Uri $Request.Uri -body $RequestBody -Headers $headers -Method PUT
         }
         catch {
             Write-Verbose "[$($MyInvocation.MyCommand.Name)] Failed"
