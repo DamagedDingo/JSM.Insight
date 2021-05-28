@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+### Added
+- Repair JSM.Insight.psd1
 
 ## [1.7] - 2021-05-27
 ### Added
