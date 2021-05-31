@@ -25,10 +25,10 @@ function Set-StatusType {
 
         $RequestBody = @{
             'name' = $Name
-            'Category'   = $Category
+            'category'   = $Category
             }
             if ($Description) {
-                $RequestBody.Add('Description', $Description)
+                $RequestBody.Add('description', $Description)
             }
             if ($objectSchemaId) {
                 $RequestBody.Add('objectSchemaId', $objectSchemaId)

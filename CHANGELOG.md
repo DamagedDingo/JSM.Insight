@@ -10,10 +10,12 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+### Added
+- Fixed case sensitive parameters 
 
 ## [1.13] - 2021-05-28
 ### Added
-- Fix copy\past issues in some functions (-Body $RequestBody)
+- Fix copy\paste issues in some functions (-Body $RequestBody)
 
 ## [1.12] - 2021-05-28
 ### Added

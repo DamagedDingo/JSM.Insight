@@ -26,7 +26,7 @@ function Get-ObjectSchemaAttributes {
                 $RequestBody.Add('extended',$extended)
             }
             if ($Query) {
-                $RequestBody.Add('Query',$Query)
+                $RequestBody.Add('query',$Query)
             }
         $RequestBody = ConvertTo-Json $RequestBody -Depth 1
 

@@ -62,10 +62,10 @@ function New-ObjectTypeAttribute {
             'type'   = $ConvertedType
             }
             if ($Label) {
-                $RequestBody.Add('Label', $Label)
+                $RequestBody.Add('label', $Label)
             }
             if ($Description) {
-                $RequestBody.Add('Description', $Description)
+                $RequestBody.Add('description', $Description)
             }
             if ($ConvertedTypeID) {
                 $RequestBody.Add('defaultTypeId', $ConvertedTypeID)

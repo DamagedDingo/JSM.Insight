@@ -22,7 +22,7 @@ function Set-ObjectSchema {
             'objectSchemaKey'   = $objectSchemaKey
             }
             if ($Description) {
-                $RequestBody.Add('Description',$Description)
+                $RequestBody.Add('description',$Description)
             }
         $RequestBody = ConvertTo-Json $RequestBody -Depth 1
 

@@ -25,16 +25,16 @@ function Set-ObjectType {
             'objectSchemaId'   = $objectSchemaId
             }
             if ($Description) {
-                $RequestBody.Add('Description', $Description)
+                $RequestBody.Add('description', $Description)
             }
             if ($parentObjectTypeId) {
                 $RequestBody.Add('parentObjectTypeId', $parentObjectTypeId)
             }
             if ($Inherited) {
-                $RequestBody.Add('Inherited', $Inherited)
+                $RequestBody.Add('inherited', $Inherited)
             }
             if ($AbstractObjectType) {
-                $RequestBody.Add('AbstractObjectType', $AbstractObjectType)
+                $RequestBody.Add('abstractObjectType', $AbstractObjectType)
             }
 
         $RequestBody = ConvertTo-Json $RequestBody -Depth 1
