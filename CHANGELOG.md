@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+
+## [1.16] - 2021-06-01
 ### Added
 - Forced to update all functions by prefixing with 'Insight' due to too many clashes with internal powershell functions. Note: will need to remove any old version of 'PSInsight'.
 - New-InsightObjectByID - Default to create
@@ -83,7 +85,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 - Publish Beta to PowerShell Gallary
 - Added PS Gallery API Key 
 
-[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.15..HEAD
+[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.16..HEAD
+[1.16]: https://github.com/DamagedDingo/JSM.Insight/compare/1.15..1.16
 [1.15]: https://github.com/DamagedDingo/JSM.Insight/compare/1.14..1.15
 [1.14]: https://github.com/DamagedDingo/JSM.Insight/compare/1.13..1.14
 [1.13]: https://github.com/DamagedDingo/JSM.Insight/compare/1.12..1.13

@@ -12,7 +12,7 @@
 RootModule = 'JSM.Insight.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.15'
+ModuleVersion = '1.16'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -69,21 +69,24 @@ Description = 'A collection of Powershell tools to interface with the API for th
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = 'Get-Icon', 'Get-InsightCreds', 'Get-InsightWorkspaceID', 
-               'Get-ObjectAttributes', 'Get-ObjectByID', 
-               'Get-ObjectConnectedTickets', 'Get-ObjectHistory', 
-               'Get-ObjectReferenceInfo', 'Get-ObjectSchema', 
-               'Get-ObjectSchemaAttributes', 'Get-ObjectSchemaList', 
-               'Get-ObjectSchemaObjectTypes', 'Get-ObjectType', 
-               'Get-ObjectTypeAttributes', 'Get-ProgressCatagoryImports', 
-               'Get-StatusTypeByID', 'Get-StatusTypes', 'New-AttributeArray', 
-               'New-ObjectByID', 'New-ObjectSchema', 'New-ObjectType', 
-               'New-ObjectTypeAttribute', 'New-StatusType', 'Remove-ObjectByID', 
-               'Remove-ObjectSchema', 'Remove-ObjectType', 
-               'Remove-ObjectTypeAttribute', 'Remove-StatusTypeByID', 
-               'Set-ObjectByID', 'Set-ObjectPosition', 'Set-ObjectSchema', 
-               'Set-ObjectType', 'Set-ObjectTypeAttribute', 'Set-StatusType', 
-               'Update-ObjectByID'
+FunctionsToExport = 'Get-InsightCreds', 'Get-InsightIcon', 'Get-InsightObject', 
+               'Get-InsightObjectAttributes', 'Get-InsightObjectByIQL', 
+               'Get-InsightObjectConnectedTickets', 'Get-InsightObjectHistory', 
+               'Get-InsightObjectReferenceInfo', 'Get-InsightObjectSchema', 
+               'Get-InsightObjectSchemaAttributes', 'Get-InsightObjectSchemaList', 
+               'Get-InsightObjectSchemaObjectTypes', 'Get-InsightObjectType', 
+               'Get-InsightObjectTypeAttributes', 
+               'Get-InsightProgressCatagoryImports', 'Get-InsightStatusTypeByID', 
+               'Get-InsightStatusTypes', 'Get-InsightWorkspaceID', 
+               'New-InsightAttributeArray', 'New-InsightObject', 
+               'New-InsightObjectSchema', 'New-InsightObjectType', 
+               'New-InsightObjectTypeAttribute', 'New-InsightStatusType', 
+               'Remove-InsightObject', 'Remove-InsightObjectSchema', 
+               'Remove-InsightObjectType', 'Remove-InsightObjectTypeAttribute', 
+               'Remove-InsightStatusType', 'Set-InsightObject', 
+               'Set-InsightObjectPosition', 'Set-InsightObjectSchema', 
+               'Set-InsightObjectType', 'Set-InsightObjectTypeAttribute', 
+               'Set-InsightStatusType'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = '*'
@@ -122,7 +125,8 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = 'Added
-- Bug fix New-ObjectTypeAttribute not setting defaultTypeId'
+- Forced to update all functions by prefixing with ''Insight'' due to too many clashes with internal powershell functions. Note: will need to remove any old version of ''PSInsight''.
+- New-InsightObjectByID - Default to create'
 
         # Prerelease string of this module
         # Prerelease = ''
