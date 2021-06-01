@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+### Added
+- Bug fix New-ObjectTypeAttribute not setting defaultTypeId
 
 ## [1.14] - 2021-05-31
 ### Added

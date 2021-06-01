@@ -32,7 +32,7 @@ function New-ObjectTypeAttribute {
         Write-Verbose "[$($MyInvocation.MyCommand.Name)] Function started"
         $Headers = New-Headers
 
-        $ConvertedType = switch ($Type) {
+        $ConvertedTypeID = switch ($Type) {
             "Default" { 0 }
             "Object Reference" { 1 }
             "User" { 2 }
@@ -40,7 +40,7 @@ function New-ObjectTypeAttribute {
             "Status" { 7 }
         }
 
-        $ConvertedTypeID = switch ($defaultTypeId) {
+        $ConvertedDefaultTypeID = switch ($defaultTypeId) {
             "None" { -1 }
             "Text" { 0 }
             "Integer" { 1 }
@@ -59,16 +59,16 @@ function New-ObjectTypeAttribute {
 
         $RequestBody = @{
             'name' = $Name
-            'type'   = $ConvertedType
+            'type'   = $ConvertedTypeID
             }
             if ($Label) {
-                $RequestBody.Add('label', $Label)
+                $RequestBody.Add('label', [System.Convert]::ToBoolean($Label) )
             }
             if ($Description) {
                 $RequestBody.Add('description', $Description)
             }
-            if ($ConvertedTypeID) {
-                $RequestBody.Add('defaultTypeId', $ConvertedTypeID)
+            if ($defaultTypeId) {
+                $RequestBody.Add('defaultTypeId', $ConvertedDefaultTypeID)
             }
             if ($typeValue) {
                 $RequestBody.Add('typeValue', $typeValue)
@@ -89,16 +89,16 @@ function New-ObjectTypeAttribute {
                 $RequestBody.Add('suffix', $suffix)
             }
             if ($includeChildObjectTypes  -eq $true) {
-                $RequestBody.Add('includeChildObjectTypes', $includeChildObjectTypes)
+                $RequestBody.Add('includeChildObjectTypes', [System.Convert]::ToBoolean($includeChildObjectTypes) )
             }
             if ($hidden -eq $true) {
-                $RequestBody.Add('hidden', $hidden)
+                $RequestBody.Add('hidden', [System.Convert]::ToBoolean($hidden) )
             }
             if ($uniqueAttribute -eq $true) {
-                $RequestBody.Add('uniqueAttribute', $uniqueAttribute)
+                $RequestBody.Add('uniqueAttribute', [System.Convert]::ToBoolean($uniqueAttribute) )
             }
             if ($summable -eq $true) {
-                $RequestBody.Add('summable', $summable)
+                $RequestBody.Add('summable', [System.Convert]::ToBoolean($summable) )
             }
             if ($regexValidation) {
                 $RequestBody.Add('regexValidation', $regexValidation)
@@ -111,6 +111,7 @@ function New-ObjectTypeAttribute {
             }
 
         $RequestBody = ConvertTo-Json $RequestBody -Depth 1
+        $RequestBody
     }
     
     process {
