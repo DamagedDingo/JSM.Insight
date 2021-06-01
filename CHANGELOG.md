@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+
+## [1.15] - 2021-06-01
 ### Added
 - Bug fix New-ObjectTypeAttribute not setting defaultTypeId
 
@@ -78,7 +80,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 - Publish Beta to PowerShell Gallary
 - Added PS Gallery API Key 
 
-[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.14..HEAD
+[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.15..HEAD
+[1.15]: https://github.com/DamagedDingo/JSM.Insight/compare/1.14..1.15
 [1.14]: https://github.com/DamagedDingo/JSM.Insight/compare/1.13..1.14
 [1.13]: https://github.com/DamagedDingo/JSM.Insight/compare/1.12..1.13
 [1.12]: https://github.com/DamagedDingo/JSM.Insight/compare/1.11..1.12
