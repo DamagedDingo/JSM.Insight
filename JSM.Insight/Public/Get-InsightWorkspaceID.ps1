@@ -8,7 +8,7 @@ function Get-InsightWorkspaceID {
 
     begin {
         Write-Verbose "[$($MyInvocation.MyCommand.Name)] Function started"
-        $Headers = New-Headers -ExperimentalApi
+        $Headers = New-InsightHeaders -ExperimentalApi
     }
     
     process {

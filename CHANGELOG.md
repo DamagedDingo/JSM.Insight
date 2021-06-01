@@ -10,6 +10,9 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+### Added
+- Forced to update all functions by prefixing with 'Insight' due to too many clashes with internal powershell functions. Note: will need to remove any old version of 'PSInsight'.
+- New-InsightObjectByID - Default to create
 
 ## [1.15] - 2021-06-01
 ### Added
