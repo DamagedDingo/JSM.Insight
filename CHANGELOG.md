@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+
+## [1.17] - 2021-06-02
 ### Added
 - Set-InsightObject and Get-InsightObject updated to suport more depth for JSON.
 - Set-InsightObject and New-InsightObject updated array var name
@@ -88,7 +90,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 - Publish Beta to PowerShell Gallary
 - Added PS Gallery API Key 
 
-[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.16..HEAD
+[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.17..HEAD
+[1.17]: https://github.com/DamagedDingo/JSM.Insight/compare/1.16..1.17
 [1.16]: https://github.com/DamagedDingo/JSM.Insight/compare/1.15..1.16
 [1.15]: https://github.com/DamagedDingo/JSM.Insight/compare/1.14..1.15
 [1.14]: https://github.com/DamagedDingo/JSM.Insight/compare/1.13..1.14
