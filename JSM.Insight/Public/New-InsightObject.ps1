@@ -1,4 +1,3 @@
-
 function New-InsightObject {
     [CmdletBinding()]
     param (
@@ -20,8 +19,10 @@ function New-InsightObject {
 
         $RequestBody = @{
             'objectTypeId' = $objectTypeId
-            'attributes'   = @($attributes)
+            'attributes'   = @($attributesArray)
             }
+
+        $RequestBody = $RequestBody | ConvertTo-Json -Depth 5
 
         $Request = [System.UriBuilder]"https://api.atlassian.com/jsm/insight/workspace/$InsightWorkspaceID/v$Version/object/create"
     }

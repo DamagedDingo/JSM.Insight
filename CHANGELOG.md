@@ -10,6 +10,9 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+### Added
+- Set-InsightObject and Get-InsightObject updated to suport more depth for JSON.
+- Set-InsightObject and New-InsightObject updated array var name
 
 ## [1.16] - 2021-06-01
 ### Added
