@@ -10,6 +10,9 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+### Added
+- New-InsightStatusType and Set-InsightStatusType updated to use int for category.
+- Raised page size on Find-InsightObject
 
 ## [1.17] - 2021-06-02
 ### Added

@@ -4,7 +4,7 @@ function Find-InsightObject {
         [string]$IQL,
         [string]$objectTypeId,
         [int]$page = 1,
-        [int]$resultsPerPage = 500,
+        [int]$resultsPerPage = 2000,
         [int]$orderByTypeAttrId,
         [ValidateSet(0,1)]
         [int]$asc = 1,

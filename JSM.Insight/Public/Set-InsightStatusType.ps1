@@ -18,14 +18,14 @@ function Set-InsightStatusType {
         $Headers = New-InsightHeaders
 
         switch ($Category) {
-            "InActive\Red" { 0 }
-            "Active\Green" { 1 }
-            "Pending\Yellow" { 2 }
+            "InActive\Red" { $CategoryID = 0 }
+            "Active\Green" { $CategoryID = 1 }
+            "Pending\Yellow" { $CategoryID = 2 }
         }
 
         $RequestBody = @{
             'name' = $Name
-            'category'   = $Category
+            'category'   = $CategoryID
             }
             if ($Description) {
                 $RequestBody.Add('description', $Description)
