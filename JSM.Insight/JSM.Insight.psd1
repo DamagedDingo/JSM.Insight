@@ -12,7 +12,7 @@
 RootModule = 'JSM.Insight.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.18'
+ModuleVersion = '1.19'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -125,8 +125,7 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = 'Added
-- New-InsightStatusType and Set-InsightStatusType updated to use int for category.
-- Raised page size on Find-InsightObject'
+- Updated Get-InsightStatusTypes to support SchemaID'
 
         # Prerelease string of this module
         # Prerelease = ''
