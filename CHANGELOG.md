@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+### Added
+- Updated Get-InsightStatusTypes to support SchemaID
 
 ## [1.18] - 2021-06-06
 ### Added
