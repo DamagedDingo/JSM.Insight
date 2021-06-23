@@ -10,6 +10,9 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+### Added
+- Added 'Get-InsightFullObjectType' to provide a way to get all infomration for an object type (Object Type, Attributes, and all Objects) WARNING: Not tested with more then 5000 objects.
+- Added requirement for module 'PSFramework' which will be used for logging going forward.
 
 ## [1.19] - 2021-06-06
 ### Added
