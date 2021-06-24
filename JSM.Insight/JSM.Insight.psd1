@@ -70,23 +70,23 @@ RequiredModules = @('PSFramework')
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
 FunctionsToExport = 'Find-InsightObject', 'Get-InsightCreds', 'Get-InsightIcon', 
-               'Get-InsightObject', 'Get-InsightObjectAttributes', 
-               'Get-InsightObjectByIQL', 'Get-InsightObjectConnectedTickets', 
-               'Get-InsightObjectHistory', 'Get-InsightObjectReferenceInfo', 
-               'Get-InsightObjectSchema', 'Get-InsightObjectSchemaAttributes', 
-               'Get-InsightObjectSchemaList', 'Get-InsightObjectSchemaObjectTypes', 
-               'Get-InsightObjectType', 'Get-InsightObjectTypeAttributes', 
-               'Get-InsightProgressCatagoryImports', 'Get-InsightStatusTypeByID', 
-               'Get-InsightStatusTypes', 'Get-InsightWorkspaceID', 
-               'New-InsightAttributeArray', 'New-InsightObject', 
-               'New-InsightObjectSchema', 'New-InsightObjectType', 
-               'New-InsightObjectTypeAttribute', 'New-InsightStatusType', 
-               'Remove-InsightObject', 'Remove-InsightObjectSchema', 
-               'Remove-InsightObjectType', 'Remove-InsightObjectTypeAttribute', 
-               'Remove-InsightStatusType', 'Set-InsightObject', 
-               'Set-InsightObjectPosition', 'Set-InsightObjectSchema', 
-               'Set-InsightObjectType', 'Set-InsightObjectTypeAttribute', 
-               'Set-InsightStatusType'
+                    'Get-InsightObject', 'Get-InsightObjectAttributes', 
+                    'Get-InsightObjectByIQL', 'Get-InsightObjectConnectedTickets', 
+                    'Get-InsightObjectHistory', 'Get-InsightObjectReferenceInfo', 
+                    'Get-InsightObjectSchema', 'Get-InsightObjectSchemaAttributes', 
+                    'Get-InsightObjectSchemaList', 'Get-InsightObjectSchemaObjectTypes', 
+                    'Get-InsightObjectType', 'Get-InsightObjectTypeAttributes', 
+                    'Get-InsightProgressCatagoryImports', 'Get-InsightStatusTypeByID', 
+                    'Get-InsightStatusTypes', 'Get-InsightWorkspaceID', 
+                    'New-InsightAttributeArray', 'New-InsightObject', 
+                    'New-InsightObjectSchema', 'New-InsightObjectType', 
+                    'New-InsightObjectTypeAttribute', 'New-InsightStatusType', 
+                    'Remove-InsightObject', 'Remove-InsightObjectSchema', 
+                    'Remove-InsightObjectType', 'Remove-InsightObjectTypeAttribute', 
+                    'Remove-InsightStatusType', 'Set-InsightObject', 
+                    'Set-InsightObjectPosition', 'Set-InsightObjectSchema', 
+                    'Set-InsightObjectType', 'Set-InsightObjectTypeAttribute', 
+                    'Set-InsightStatusType'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
 CmdletsToExport = '*'
