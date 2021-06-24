@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+
+## [1.20] - 2021-06-24
 ### Added
 - Added 'Get-InsightFullObjectType' to provide a way to get all infomration for an object type (Object Type, Attributes, and all Objects) WARNING: Not tested with more then 5000 objects.
 - Added requirement for module 'PSFramework' which will be used for logging going forward.
@@ -102,7 +104,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 - Publish Beta to PowerShell Gallary
 - Added PS Gallery API Key 
 
-[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.19..HEAD
+[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.20..HEAD
+[1.20]: https://github.com/DamagedDingo/JSM.Insight/compare/1.19..1.20
 [1.19]: https://github.com/DamagedDingo/JSM.Insight/compare/1.18..1.19
 [1.18]: https://github.com/DamagedDingo/JSM.Insight/compare/1.17..1.18
 [1.17]: https://github.com/DamagedDingo/JSM.Insight/compare/1.16..1.17
