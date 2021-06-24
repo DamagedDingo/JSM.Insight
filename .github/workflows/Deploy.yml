@@ -28,6 +28,7 @@ jobs:
           $Modules = @(
             "ChangelogManagement"
             "InvokeBuild"
+            "PSFramework"
           )
           Install-Module -Name $Modules -Scope "CurrentUser" -Force -ErrorAction "Stop"
         shell: pwsh
