@@ -12,7 +12,7 @@
 RootModule = 'JSM.Insight.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.21'
+ModuleVersion = '1.22'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -125,7 +125,7 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = 'Added
-- Get-InsightFullObjectType changed page size from 0 to 1 for when there are no results'
+- Get-InsightFullObjectType as it still was not catching null values: ( ( $page -eq $results.pageSize ) -or ( $($results.objectEntries).count -eq 0 ) )'
 
         # Prerelease string of this module
         # Prerelease = ''
