@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+
+## [1.21] - 2021-07-30
 ### Added
 - Get-InsightFullObjectType changed page size from 0 to 1 for when there are no results
 
@@ -106,7 +108,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 - Publish Beta to PowerShell Gallary
 - Added PS Gallery API Key 
 
-[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.20..HEAD
+[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.21..HEAD
+[1.21]: https://github.com/DamagedDingo/JSM.Insight/compare/1.20..1.21
 [1.20]: https://github.com/DamagedDingo/JSM.Insight/compare/1.19..1.20
 [1.19]: https://github.com/DamagedDingo/JSM.Insight/compare/1.18..1.19
 [1.18]: https://github.com/DamagedDingo/JSM.Insight/compare/1.17..1.18
