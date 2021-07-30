@@ -34,7 +34,7 @@ function Get-InsightFullObjectType {
 			Write-PSFMessage -Level Host -Message "Preforming 'Find-InsightObject' on page: $page" -Tag 'Get-InsightFullObjectType'
 			$results = Find-InsightObject -objectSchemaId $ObjectSchema.id -objectTypeId $e.objectType.id -resultsPerPage 2000 -page $page -IQL ${objectType = "$ObjectTypeName"} -includeAttributes $true
 			$objs += $results.objectEntries
-		} until ( ( $page -eq $results.pageSize ) -or ( $results.pageSize -eq 0 ) )
+		} until ( ( $page -eq $results.pageSize ) -or ( $results.pageSize -eq 1 ) )
 		$e.objects = $objs
 		$e.name = $e.objectType.name
 		$JSMObjects += $e

@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+### Added
+- Get-InsightFullObjectType changed page size from 0 to 1 for when there are no results
 
 ## [1.20] - 2021-06-24
 ### Added
