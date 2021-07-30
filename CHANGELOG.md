@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+### Added
+- Get-InsightFullObjectType as it still was not catching null values: ( ( $page -eq $results.pageSize ) -or ( $($results.objectEntries).count -eq 0 ) )
 
 ## [1.21] - 2021-07-30
 ### Added
