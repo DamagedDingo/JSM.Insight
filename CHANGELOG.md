@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+
+## [1.23] - 2021-08-01
 ### Added
 - Get-InsightFullObjectType - ( ( $page -eq $results.pageSize ) -or ( !($results.objectEntries) ) )
 
@@ -114,7 +116,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 - Publish Beta to PowerShell Gallary
 - Added PS Gallery API Key 
 
-[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.22..HEAD
+[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.23..HEAD
+[1.23]: https://github.com/DamagedDingo/JSM.Insight/compare/1.22..1.23
 [1.22]: https://github.com/DamagedDingo/JSM.Insight/compare/1.21..1.22
 [1.21]: https://github.com/DamagedDingo/JSM.Insight/compare/1.20..1.21
 [1.20]: https://github.com/DamagedDingo/JSM.Insight/compare/1.19..1.20
