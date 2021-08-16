@@ -10,6 +10,9 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+### Added
+- Invoke-HostInfo REPLACEMENT FOR INSIGHT DISCOVERY AGENT WINDOWS ONLY
+- Get-InsightFullObjectType updated with a fast option to ignore objects
 
 ## [1.23] - 2021-08-01
 ### Added
