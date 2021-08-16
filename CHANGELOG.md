@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+
+## [1.24] - 2021-08-16
 ### Added
 - Invoke-HostInfo REPLACEMENT FOR INSIGHT DISCOVERY AGENT WINDOWS ONLY
 - Get-InsightFullObjectType updated with a fast option to ignore objects
@@ -119,7 +121,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 - Publish Beta to PowerShell Gallary
 - Added PS Gallery API Key 
 
-[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.23..HEAD
+[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.24..HEAD
+[1.24]: https://github.com/DamagedDingo/JSM.Insight/compare/1.23..1.24
 [1.23]: https://github.com/DamagedDingo/JSM.Insight/compare/1.22..1.23
 [1.22]: https://github.com/DamagedDingo/JSM.Insight/compare/1.21..1.22
 [1.21]: https://github.com/DamagedDingo/JSM.Insight/compare/1.20..1.21
