@@ -10,6 +10,9 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+### Added
+- All Error handling has been chnaged to provide complete error as the API was not responding consistently.
+- Write-Error -ErrorRecord $_
 
 ## [1.25] - 2021-08-18
 ### Added

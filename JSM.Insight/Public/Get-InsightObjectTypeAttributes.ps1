@@ -34,7 +34,7 @@ function Get-InsightObjectTypeAttributes {
         }
         catch {
             Write-Verbose "[$($MyInvocation.MyCommand.Name)] Failed"
-            Write-Error -Message "$($_.Exception.Message)" -ErrorId $_.Exception.Code -Category InvalidOperation
+            Write-Error -ErrorRecord $_
         } 
 
         $response
