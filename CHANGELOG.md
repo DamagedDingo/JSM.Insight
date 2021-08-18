@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+
+## [1.26] - 2021-08-18
 ### Added
 - All Error handling has been chnaged to provide complete error as the API was not responding consistently.
 - Write-Error -ErrorRecord $_
@@ -128,7 +130,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 - Publish Beta to PowerShell Gallary
 - Added PS Gallery API Key 
 
-[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.25..HEAD
+[Unreleased]: https://github.com/DamagedDingo/JSM.Insight/compare/1.26..HEAD
+[1.26]: https://github.com/DamagedDingo/JSM.Insight/compare/1.25..1.26
 [1.25]: https://github.com/DamagedDingo/JSM.Insight/compare/1.24..1.25
 [1.24]: https://github.com/DamagedDingo/JSM.Insight/compare/1.23..1.24
 [1.23]: https://github.com/DamagedDingo/JSM.Insight/compare/1.22..1.23

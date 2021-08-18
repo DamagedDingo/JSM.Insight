@@ -12,7 +12,7 @@
 RootModule = 'JSM.Insight.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.25'
+ModuleVersion = '1.26'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -128,7 +128,8 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = 'Added
-- Get-InsightObject updated error message to use $_.ErrorDetails.Message which should be more useful. '
+- All Error handling has been chnaged to provide complete error as the API was not responding consistently.
+- Write-Error -ErrorRecord $_'
 
         # Prerelease string of this module
         # Prerelease = ''
