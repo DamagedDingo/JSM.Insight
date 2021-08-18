@@ -10,6 +10,8 @@ Format as below (Requires the '### Added' as a header or task fails)
 ...- Update ReadMe.MD
 
 ## [Unreleased]
+### Added
+- Get-InsightObject updated error message to use $_.ErrorDetails.Message which should be more useful. 
 
 ## [1.24] - 2021-08-16
 ### Added
